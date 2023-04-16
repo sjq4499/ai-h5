@@ -13,7 +13,7 @@ export default defineConfig(({ command, mode }) => {
   const env = loadEnv(mode, process.cwd());
   console.log(mode, env);
   return {
-    base: '/ai-h5/', // 打包路径
+    base: '/', // 打包路径
     plugins: [
       vue(),
       Components({
