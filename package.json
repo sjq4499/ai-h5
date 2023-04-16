@@ -23,7 +23,7 @@
     "sass": "^1.44.0",
     "sass-loader": "^12.3.0",
     "unplugin-auto-import": "^0.6.1",
-    "unplugin-vue-components": "^0.17.21",
+    "unplugin-vue-components": "^0.22.12",
     "vite": "^2.6.4"
   }
 }

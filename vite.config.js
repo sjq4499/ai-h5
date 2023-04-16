@@ -1,18 +1,10 @@
-/*
- * @Descripttion:
- * @Author: sjq
- * @Date: 2021-12-07 13:55:53
- * @LastEditors: sjq
- * @LastEditTime: 2022-04-20 14:32:31
- */
+// import { fileURLToPath, URL } from 'node:url'//vite3
+
 import { defineConfig, loadEnv } from 'vite';
 import vue from '@vitejs/plugin-vue';
-import AutoImport from 'unplugin-auto-import/vite';
+
 import Components from 'unplugin-vue-components/vite';
-import {
-  ElementPlusResolver,
-  NaiveUiResolver,
-} from 'unplugin-vue-components/resolvers';
+import { VantResolver } from 'unplugin-vue-components/resolvers';
 import path from 'path';
 
 // https://vitejs.dev/config/
@@ -24,16 +16,14 @@ export default defineConfig(({ command, mode }) => {
     base: env.VITE_APP_BASE_API, // 打包路径
     plugins: [
       vue(),
-      AutoImport({
-        resolvers: [ElementPlusResolver()],
-      }),
       Components({
-        resolvers: [ElementPlusResolver(), NaiveUiResolver()],
+        resolvers: [VantResolver()],
       }),
     ],
     resolve: {
       alias: {
         '@': path.resolve(__dirname, './src'),
+        // '@': fileURLToPath(new URL('./src', import.meta.url))
       },
     },
     css: {
