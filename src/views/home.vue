@@ -11,19 +11,19 @@
       <div class="logo">Lambda Ai</div>
       <div class="user">
         <div class="name">Mr.Wang</div>
-        <img class="avatar" src="@/assets/images/avatar.png" alt="" />
+        <img class="avatar" src="../assets/images/avatar.png" alt="" />
       </div>
     </div>
     <div>
       <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
         <van-swipe-item
-          ><img src="@/assets/images/home-swiper.png" alt=""
+          ><img src="../assets/images/home-swiper.png" alt=""
         /></van-swipe-item>
         <van-swipe-item
-          ><img src="@/assets/images/home-swiper.png" alt=""
+          ><img src="../assets/images/home-swiper.png" alt=""
         /></van-swipe-item>
         <van-swipe-item
-          ><img src="@/assets/images/home-swiper.png" alt=""
+          ><img src="../assets/images/home-swiper.png" alt=""
         /></van-swipe-item>
       </van-swipe>
     </div>

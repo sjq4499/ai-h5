@@ -2,11 +2,11 @@
   <div class="tabbar">
     <div class="tabbar_list">
       <div class="tabbar_item" @click="goPage('home')">
-        <img src="@/assets/images/ai-icon.png" alt="" />
+        <img src="../assets/images/ai-icon.png" alt="" />
         <div>Ai</div>
       </div>
       <div class="tabbar_item">
-        <img src="@/assets/images/my-icon.png" @click="goPage('my')" alt="" />
+        <img src="../assets/images/my-icon.png" @click="goPage('my')" alt="" />
         <div>我的</div>
       </div>
     </div>

@@ -9,8 +9,8 @@
   <div class="main">
     <template v-if="steep === 1">
       <div class="img_bg">
-        <!-- <img class="photo" src="@/assets/images/photo.png" alt="" /> -->
-        <img class="logo" src="@/assets/images/logo.png" alt="" />
+        <!-- <img class="photo" src="../assets/images/photo.png" alt="" /> -->
+        <img class="logo" src="../assets/images/logo.png" alt="" />
       </div>
       <div class="preamble_main">
         <div class="preamble">
@@ -54,7 +54,7 @@
 import { defineComponent, ref, reactive } from 'vue';
 export default defineComponent({
   setup() {
-    let steep = ref(2);
+    let steep = ref(1);
     let tel = ref('');
     let name = ref('');
     let nextSteep = (val) => {
@@ -78,7 +78,7 @@ export default defineComponent({
 }
 .img_bg {
   flex: 1;
-  background: url(@/assets/images/photo.png) no-repeat;
+  background: url(../assets/images/photo.png) no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;

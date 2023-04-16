@@ -9,11 +9,11 @@
   <div class="pb84">
     <div class="top">
       <div class="photo">
-        <img class="avatar" src="@/assets/images/avatar.png" alt="" />
+        <img class="avatar" src="../assets/images/avatar.png" alt="" />
       </div>
       <div class="name">MrWangGang</div>
       <div class="money">
-        <img src="@/assets/images/icon-4.png" alt="" class="ico" />
+        <img src="../assets/images/icon-4.png" alt="" class="ico" />
         <div class="num">200000</div>
       </div>
     </div>
@@ -87,7 +87,7 @@ export default defineComponent({
   height: 100%;
 }
 .top {
-  background: url(@/assets/images/top.png) no-repeat;
+  background: url(../assets/images/top.png) no-repeat;
   background-size: cover;
   padding: 50px 24px 24px;
   text-align: center;

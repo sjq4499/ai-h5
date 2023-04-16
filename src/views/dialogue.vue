@@ -7,7 +7,7 @@
       :key="index"
     >
       <div class="send-avatar">
-        <img class="avatar" src="@/assets/images/avatar.png" alt="" />
+        <img class="avatar" src="../assets/images/avatar.png" alt="" />
       </div>
       <div class="send-main">
         <div class="send-content">
@@ -24,7 +24,7 @@
           placeholder="说点什么吧..."
         />
         <div class="send-btn">
-          <img src="@/assets/images/send-icon.png" alt="" />
+          <img src="../assets/images/send-icon.png" alt="" />
         </div>
       </div>
     </div>
