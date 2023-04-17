@@ -52,12 +52,17 @@
 </template>
 <script>
 import { defineComponent, ref, reactive } from 'vue';
+import { useRouter } from 'vue-router';
 export default defineComponent({
   setup() {
     let steep = ref(1);
     let tel = ref('');
     let name = ref('');
+    const router = useRouter();
     let nextSteep = (val) => {
+      if (val === 3) {
+        router.push('my');
+      }
       steep.value = val;
     };
     return {
