@@ -33,7 +33,12 @@
     <van-popup
       v-model:show="showLeft"
       position="left"
-      :style="{ width: '80%', height: '100%' }"
+      :style="{
+        width: '80%',
+        height: '100%',
+        background: 'rgba(299, 299, 299, 0.95)',
+      }"
+      :overlay-style="{ background: 'transparent' }"
     >
       <div class="m-popup">
         <div
@@ -196,6 +201,7 @@ export default defineComponent({
 }
 .m-popup {
   padding: 24px;
+
   .popup-list {
     border-radius: 4px;
     background: #515151;

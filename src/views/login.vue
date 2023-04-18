@@ -10,7 +10,7 @@
     <template v-if="steep === 1">
       <div class="img_bg">
         <!-- <img class="photo" src="../assets/images/photo.png" alt="" /> -->
-        <img class="logo" src="../assets/images/logo.png" alt="" />
+        <img class="logo" src="../assets/images/logo-title.png" alt="" />
       </div>
       <div class="preamble_main">
         <div class="preamble">
@@ -61,7 +61,7 @@ export default defineComponent({
     const router = useRouter();
     let nextSteep = (val) => {
       if (val === 4) {
-        router.push('my');
+        router.push('home');
       }
       steep.value = val;
     };
@@ -89,7 +89,7 @@ export default defineComponent({
   justify-content: center;
   align-items: center;
   .logo {
-    width: 100px;
+    width: 150px;
   }
 }
 .preamble_main {
