@@ -45,7 +45,7 @@
           class="m_input"
           placeholder="请输入您的称呼"
         />
-        <div class="s_btn" @click="nextSteep(3)">NEXT</div>
+        <div class="s_btn" @click="nextSteep(4)">NEXT</div>
       </div>
     </template>
   </div>
@@ -60,7 +60,7 @@ export default defineComponent({
     let name = ref('');
     const router = useRouter();
     let nextSteep = (val) => {
-      if (val === 3) {
+      if (val === 4) {
         router.push('my');
       }
       steep.value = val;
