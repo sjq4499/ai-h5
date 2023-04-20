@@ -14,18 +14,8 @@
         <img class="avatar" src="../assets/images/avatar.png" alt="" />
       </div>
     </div>
-    <div>
-      <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
-        <van-swipe-item
-          ><img src="../assets/images/home-swiper.png" alt=""
-        /></van-swipe-item>
-        <van-swipe-item
-          ><img src="../assets/images/home-swiper.png" alt=""
-        /></van-swipe-item>
-        <van-swipe-item
-          ><img src="../assets/images/home-swiper.png" alt=""
-        /></van-swipe-item>
-      </van-swipe>
+    <div class="home_swiper">
+      <img src="../assets/images/home-swiper.png" alt="" />
     </div>
     <div class="search">
       <van-search
@@ -151,5 +141,15 @@ export default defineComponent({
   border: 1px solid rgba(199, 209, 219, 0.25);
   box-shadow: 0px 4px 12px rgba(199, 209, 219, 0.25);
   border-radius: 15px;
+}
+.home_swiper {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
 </style>
