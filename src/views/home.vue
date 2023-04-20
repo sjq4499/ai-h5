@@ -15,7 +15,8 @@
       </div>
     </div>
     <div class="home_swiper">
-      <img src="../assets/images/home-swiper.png" alt="" />
+      <div class="hey">hey!</div>
+      <div class="hey2">今天要创作什么内容呢?</div>
     </div>
     <div class="search">
       <van-search
@@ -53,7 +54,7 @@
         <van-icon name="arrow" />
       </div>
     </div>
-    <Tabbar></Tabbar>
+    <Tabbar active="home"></Tabbar>
   </div>
 </template>
 <script>
@@ -145,11 +146,13 @@ export default defineComponent({
 .home_swiper {
   margin-top: 40px;
   margin-bottom: 20px;
-  border-radius: 25px;
-  overflow: hidden;
-  img {
-    width: 100%;
-    height: 100%;
+  .hey {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .hey2 {
+    padding-left: 30px;
   }
 }
 </style>

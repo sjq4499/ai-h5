@@ -2,24 +2,43 @@
   <div class="tabbar">
     <div class="tabbar_list">
       <div class="tabbar_item" @click="goPage('home')">
-        <img src="../assets/images/ai-icon.png" alt="" />
-        <div>Ai</div>
+        <img
+          src="../assets/images/ai-icon-acitve.png"
+          alt=""
+          v-if="active === 'home'"
+        />
+        <img src="../assets/images/ai-icon.png" alt="" v-else />
+        <div :class="{ active: active === 'home' }">Ai</div>
       </div>
       <div class="tabbar_item">
-        <img src="../assets/images/my-icon.png" @click="goPage('my')" alt="" />
-        <div>我的</div>
+        <img
+          src="../assets/images/my-icon-active.png"
+          @click="goPage('my')"
+          alt=""
+          v-if="active === 'my'"
+        />
+        <img
+          src="../assets/images/my-icon.png"
+          @click="goPage('my')"
+          alt=""
+          v-else
+        />
+        <div :class="{ active: active === 'my' }">我的</div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { defineComponent, ref, reactive } from 'vue';
+import { defineComponent, ref, reactive, toRefs } from 'vue';
 import { useRouter } from 'vue-router';
 
 export default defineComponent({
-  setup() {
-    let active = ref('');
+  props: {
+    active: String,
+  },
+  setup(props) {
+    const { active } = toRefs(props);
     const router = useRouter();
     let goPage = (data) => {
       router.push(data);
@@ -42,6 +61,7 @@ export default defineComponent({
   .tabbar_list {
     display: flex;
     height: 84px;
+    color: rgb(196, 196, 196);
     .tabbar_item {
       text-align: center;
       flex: 1;
@@ -55,5 +75,8 @@ export default defineComponent({
       }
     }
   }
+}
+.active {
+  color: #000;
 }
 </style>

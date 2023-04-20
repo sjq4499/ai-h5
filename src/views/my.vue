@@ -35,7 +35,7 @@
         </div>
       </div>
     </div>
-    <Tabbar></Tabbar>
+    <Tabbar active="my"></Tabbar>
   </div>
 </template>
 <script>
